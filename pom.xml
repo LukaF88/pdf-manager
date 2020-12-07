@@ -90,6 +90,40 @@
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
+
+			<plugin>
+				<artifactId>maven-antrun-plugin</artifactId>
+				<executions>
+					<execution>
+						<id>clean-resource</id>
+						<phase>clean</phase>
+						<goals>
+							<goal>run</goal>
+						</goals>
+						<configuration>
+							<target name="clean jar">
+								<delete>
+									<fileset dir="${basedir}/docker/" includes="*.jar" />
+								</delete>
+							</target>
+						</configuration>
+					</execution>
+					<execution>
+						<id>copy-resource-one</id>
+						<phase>package</phase>
+						<goals>
+							<goal>run</goal>
+						</goals>
+						<configuration>
+						<target name="copy jar">
+							<copy todir="${basedir}/docker/">
+								<fileset dir="target/" includes="pdf_manager*.jar" />
+							</copy>
+						</target>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
 		</plugins>
 	</build>
 
