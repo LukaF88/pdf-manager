@@ -1,5 +1,5 @@
 target/
-docker/*.jar
+#docker/*.jar
 .vscode/
 .mvn/
 *.db
