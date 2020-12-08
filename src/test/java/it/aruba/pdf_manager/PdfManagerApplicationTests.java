@@ -131,21 +131,6 @@ class PdfManagerApplicationTests {
 
 		PresentationDocuments secRetr = doRetrieve();
 		assertThat(firstRetr.getDocuments().size() == secRetr.getDocuments().size() + 1).isTrue();
-
-		ch = new ChangeDocumentRequest();
-		ch.setOldName("pippo.pdf"); // NON ESISTE
-		ch.setNewName(null);
-
-		try {
-			this.restTemplate.exchange(modifyUrl, HttpMethod.POST, new HttpEntity<ChangeDocumentRequest>(ch, headers),
-					PresentationDocuments.class).getBody();
-		} catch (EmptyResultDataAccessException exc) {
-			// CORRETTO!
-		}
-
-		PresentationDocuments tirRetr = doRetrieve();
-
-		assertThat(tirRetr.getDocuments().size() == secRetr.getDocuments().size()).isTrue();
 	}
 
 }
