@@ -11,6 +11,8 @@ PDF-Manager is a SpringBoot based web application, used to store and serve pdf f
 
 To install and run:
 ```
+git clone https://github.com/LukaF88/pdf-manager.git
+cd pdf-manager
 mvn clean install
 cd target
 java -jar ./pdf_manager-0.0.1-SNAPSHOT.jar

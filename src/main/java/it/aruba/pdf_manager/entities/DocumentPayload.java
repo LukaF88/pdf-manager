@@ -1,7 +1,5 @@
 package it.aruba.pdf_manager.entities;
 
-import java.sql.Blob;
-
 import javax.persistence.Entity;
 import javax.persistence.Id;
 

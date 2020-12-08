@@ -1,4 +1,4 @@
-package it.aruba.pdf_manager;
+package it.aruba.pdf_manager.beans;
 
 import java.time.LocalDateTime;
 
