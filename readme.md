@@ -18,8 +18,7 @@ cd target
 java -jar ./pdf_manager-0.0.1-SNAPSHOT.jar
 ```
 
-Once started, user interface is available at [http://localhost:8080](http://localhost:8080). Credentials for initial login are "user" and "pass"
-
+Once started, user interface is available at [http://localhost:8080](http://localhost:8080). Credentials for initial login are "user" and "pass". Swagger available at [http://localhost:8080/swagger-ui.html](http://localhost:8080/swagger-ui.html)
 
 ## Built With
 
