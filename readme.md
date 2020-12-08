@@ -4,7 +4,7 @@ PDF-Manager is a SpringBoot based web application, used to store and serve pdf f
 
 ### Prerequisites
 
-- Java 8+
+- openjdk 11.0.8
 - Maven 3+
 
 ### Installing

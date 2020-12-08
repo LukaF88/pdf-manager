@@ -43,9 +43,6 @@ class PdfManagerApplicationTests {
 
 	void init() {
 
-		// creo un botto di record, pdf in una cartella
-		// e verifico la dimensione, facendo una get
-
 		String fileName = "pdf/armadillo.pdf";
 		ClassLoader classLoader = getClass().getClassLoader();
 
